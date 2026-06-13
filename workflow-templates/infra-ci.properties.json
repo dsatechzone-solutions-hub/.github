@@ -1,0 +1,5 @@
+{
+  "name": "Infra CI (shellcheck, yamllint, kubeconform)",
+  "description": "Lint bash scripts, validate YAML, and check Kubernetes manifests against schemas",
+  "iconName": "shield"
+}

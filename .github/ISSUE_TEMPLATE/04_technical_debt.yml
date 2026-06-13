@@ -1,0 +1,59 @@
+name: Technical debt
+description: Refactor or pay down technical debt with a clear plan
+title: "refactor: "
+labels:
+  - "type: tech-debt"
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: "Extract shared deploy helpers from phase scripts"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Affected repository
+      options:
+        - scaleway-home-lab
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: repository_other
+    attributes:
+      label: Other repository name
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why now?
+      description: Cost of not fixing; risk if deferred
+    validations:
+      required: true
+
+  - type: textarea
+    id: plan
+    attributes:
+      label: Incremental plan
+      description: Steps to refactor safely without big-bang changes
+    validations:
+      required: true
+
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk assessment
+      description: What could break; how to verify each step
+
+  - type: checkboxes
+    id: testing
+    attributes:
+      label: Safety net
+      options:
+        - label: Existing tests must pass throughout
+        - label: New tests required before refactor
+        - label: Manual verification steps documented

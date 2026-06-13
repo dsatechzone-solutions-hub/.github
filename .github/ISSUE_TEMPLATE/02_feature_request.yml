@@ -1,0 +1,103 @@
+name: Feature request
+description: Propose a new capability or enhancement
+title: "feat: "
+labels:
+  - "type: feature"
+  - "status: triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the problem and proposed solution. For large changes, use the RFC template instead.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: "Add OIDC integration for internal dashboard"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Affected repository
+      options:
+        - scaleway-home-lab
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: repository_other
+    attributes:
+      label: Other repository name
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Component / area
+      options:
+        - area: api
+        - area: ui
+        - area: ci
+        - area: infra
+        - area: docs
+        - area: security
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Suggested priority
+      options:
+        - priority: critical
+        - priority: high
+        - priority: medium
+        - priority: low
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What problem does this solve? Who is affected?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Checklist of conditions that define "done"
+      placeholder: |
+        - [ ] User can sign in via Keycloak
+        - [ ] Unit tests cover auth callback
+        - [ ] Runbook updated
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What this feature explicitly does not include
+
+  - type: checkboxes
+    id: testing
+    attributes:
+      label: Testing expectations
+      options:
+        - label: Unit tests required
+        - label: Integration tests required
+        - label: E2E / smoke tests required
+        - label: Manual verification documented

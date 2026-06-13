@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security policy
+    url: https://github.com/dsatechzone-solutions-hub/.github/blob/main/SECURITY.md
+    about: Report vulnerabilities privately — do not use public issues
+  - name: Contributing guide
+    url: https://github.com/dsatechzone-solutions-hub/.github/blob/main/CONTRIBUTING.md
+    about: Engineering standards, TDD, and PR requirements
+  - name: Release policy
+    url: https://github.com/dsatechzone-solutions-hub/.github/blob/main/RELEASE.md
+    about: semantic-release and versioning rules

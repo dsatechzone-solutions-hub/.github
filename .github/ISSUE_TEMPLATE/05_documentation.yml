@@ -1,0 +1,50 @@
+name: Documentation
+description: Improve or add documentation, runbooks, or guides
+title: "docs: "
+labels:
+  - "type: documentation"
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: "Document Nexus repository bootstrap procedure"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Affected repository
+      options:
+        - scaleway-home-lab
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: repository_other
+    attributes:
+      label: Other repository name
+
+  - type: textarea
+    id: gap
+    attributes:
+      label: Documentation gap
+      description: What is missing, outdated, or unclear?
+    validations:
+      required: true
+
+  - type: input
+    id: audience
+    attributes:
+      label: Target audience
+      placeholder: "Platform engineers deploying phase 34"
+    validations:
+      required: true
+
+  - type: textarea
+    id: structure
+    attributes:
+      label: Proposed structure
+      description: Outline or sections to add

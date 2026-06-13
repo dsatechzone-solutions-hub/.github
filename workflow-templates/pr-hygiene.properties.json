@@ -1,0 +1,5 @@
+{
+  "name": "PR Hygiene",
+  "description": "Validate Conventional Commits PR titles and optionally label PRs by size",
+  "iconName": "checklist"
+}

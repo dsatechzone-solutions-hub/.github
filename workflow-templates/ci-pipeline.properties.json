@@ -1,0 +1,5 @@
+{
+  "name": "CI Pipeline",
+  "description": "Lint, test, and build pipeline with placeholder steps to customize per repository",
+  "iconName": "rocket"
+}

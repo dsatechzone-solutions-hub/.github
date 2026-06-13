@@ -1,0 +1,114 @@
+name: Bug report
+description: Report a defect with reproduction steps
+title: "fix: "
+labels:
+  - "type: bug"
+  - "status: triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please search existing issues first.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: One-line description of the bug
+      placeholder: "Deploy script fails when S3 bucket name contains a hyphen"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Affected repository
+      options:
+        - scaleway-home-lab
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: repository_other
+    attributes:
+      label: Other repository name
+      description: Required if you selected "other"
+      placeholder: my-app
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Component / area
+      options:
+        - area: api
+        - area: ui
+        - area: ci
+        - area: infra
+        - area: docs
+        - area: security
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Suggested priority
+      options:
+        - priority: critical
+        - priority: high
+        - priority: medium
+        - priority: low
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps to reproduce the behavior
+      placeholder: |
+        1. Run `./scripts/deploy-and-run.sh 07-cluster-verify.sh`
+        2. Observe error in pod status
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, branch, commit SHA, runtime versions, cluster context
+      placeholder: |
+        - Branch: main @ abc1234
+        - OS: Ubuntu 26.04
+        - k3s: v1.32.x
+
+  - type: checkboxes
+    id: testing
+    attributes:
+      label: Testing expectations
+      options:
+        - label: Unit test should cover this fix
+        - label: Integration test should cover this fix
+        - label: Manual / runbook verification only (infra)
+        - label: Not applicable
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Logs, screenshots, related issues

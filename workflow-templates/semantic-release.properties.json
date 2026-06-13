@@ -1,0 +1,5 @@
+{
+  "name": "Semantic Release",
+  "description": "Automated SemVer, CHANGELOG, and GitHub Releases from Conventional Commits on main",
+  "iconName": "tag"
+}

@@ -1,0 +1,73 @@
+name: RFC (design proposal)
+description: Propose a design before large or cross-cutting work
+title: "RFC: "
+labels:
+  - "type: rfc"
+  - "status: discussion"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for significant changes that need design review before implementation.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Title
+      placeholder: "Replace Harbor with dual-registry strategy"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Primary repository
+      options:
+        - scaleway-home-lab
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: repository_other
+    attributes:
+      label: Other repository name
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+    validations:
+      required: true
+
+  - type: textarea
+    id: goals
+    attributes:
+      label: Goals and non-goals
+    validations:
+      required: true
+
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      description: At least two approaches with pros/cons
+    validations:
+      required: true
+
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommended approach
+    validations:
+      required: true
+
+  - type: textarea
+    id: rollout
+    attributes:
+      label: Rollout and rollback plan
+
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Open questions

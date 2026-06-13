@@ -1,0 +1,47 @@
+name: Task
+description: Small bounded work — dependency bump, config tweak, maintenance
+title: "chore: "
+labels:
+  - "type: task"
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: "Bump cert-manager chart to 1.16.x"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Affected repository
+      options:
+        - scaleway-home-lab
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: repository_other
+    attributes:
+      label: Other repository name
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be done and why
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      placeholder: |
+        - [ ] Change applied
+        - [ ] CI green
+        - [ ] Docs updated if needed
+    validations:
+      required: true

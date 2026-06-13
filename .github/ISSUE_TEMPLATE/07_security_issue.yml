@@ -1,0 +1,52 @@
+name: Security hygiene
+description: Non-exploitable security improvements (not active vulnerabilities)
+title: "security: "
+labels:
+  - "type: security"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **For exploitable vulnerabilities, do not use this form.**
+        Email **dipak-kumar.singh@dsatechzone.com** per [SECURITY.md](https://github.com/dsatechzone-solutions-hub/.github/blob/main/SECURITY.md).
+
+        Use this form for security hygiene: hardening, dependency updates, policy gaps, etc.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: "Enable Dependabot security updates on all org repos"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: repository
+    attributes:
+      label: Affected repository
+      options:
+        - scaleway-home-lab
+        - organization-wide
+        - other
+    validations:
+      required: true
+
+  - type: input
+    id: repository_other
+    attributes:
+      label: Other repository name
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What improvement is needed and why
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Risk if not addressed
+    validations:
+      required: true

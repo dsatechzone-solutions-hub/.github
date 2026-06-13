@@ -1,0 +1,62 @@
+# Infra CI — shellcheck, yamllint, kubeconform for bash/YAML/K8s repos.
+# Customize paths in each repository after adoption.
+
+name: Infra CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: infra-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  shellcheck:
+    name: shellcheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run shellcheck
+        uses: koalaman/shellcheck-action@v1.2.0
+        with:
+          scandir: .
+          severity: warning
+
+  yamllint:
+    name: yamllint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install yamllint
+        run: pip install yamllint
+      - name: Run yamllint
+        run: |
+          cat > .yamllint.yml <<'EOF'
+          extends: default
+          rules:
+            line-length: { max: 120, allow-non-breakable-inline-mappings: true }
+            document-start: disable
+          EOF
+          yamllint -s .
+
+  kubeconform:
+    name: kubeconform
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install kubeconform
+        run: |
+          curl -sSL "https://github.com/yannh/kubeconform/releases/download/v0.6.7/kubeconform-linux-amd64.tar.gz" \
+            | tar xz kubeconform
+          sudo install kubeconform /usr/local/bin/kubeconform
+      - name: Validate Kubernetes manifests
+        run: |
+          if [[ -d config/k8s ]]; then
+            kubeconform -summary -ignore-missing-schemas config/k8s
+          else
+            echo "No config/k8s directory — customize path in this workflow"
+          fi
+      # If manifests live elsewhere, change config/k8s to your path.
+      # Optional: add repo-local secret verification script as an extra step.

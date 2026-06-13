@@ -1,0 +1,10 @@
+# dsatechzone-solutions-hub default ownership
+# Copy this file to .github/CODEOWNERS in each repository and customize paths/teams.
+
+# Default owner for everything
+* @dipakkumarsingh-dsatechzone
+
+# Examples — uncomment and adjust per repo:
+# /docs/                    @dipakkumarsingh-dsatechzone
+# /.github/                 @dipakkumarsingh-dsatechzone
+# /config/                  @dipakkumarsingh-dsatechzone

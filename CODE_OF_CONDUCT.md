@@ -1,4 +1,21 @@
+<div align="center">
+
 # Contributor Covenant Code of Conduct
+
+**Community standards for dsatechzone-solutions-hub**
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa?style=for-the-badge)](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
+[![Organization](https://img.shields.io/badge/org-dsatechzone--solutions--hub-1f6feb?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dsatechzone-solutions-hub)
+[![Enforcement](https://img.shields.io/badge/enforcement-contact%20available-blue?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:dipak-kumar.singh@dsatechzone.com)
+
+[![Standards Hub](https://img.shields.io/badge/Standards-.github%20repo-24292f?style=flat-square&logo=github)](https://github.com/dsatechzone-solutions-hub/.github)
+[![Contributing](https://img.shields.io/badge/Contributing-guide-1f883d?style=flat-square)](CONTRIBUTING.md)
+[![Security](https://img.shields.io/badge/Security-policy-critical?style=flat-square&logo=shield)](SECURITY.md)
+[![Support](https://img.shields.io/badge/Support-help-0969da?style=flat-square)](SUPPORT.md)
+
+</div>
+
+---
 
 ## Our Pledge
 

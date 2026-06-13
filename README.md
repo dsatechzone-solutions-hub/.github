@@ -1,10 +1,33 @@
-# dsatechzone-solutions-hub — organization defaults
+<div align="center">
+
+# dsatechzone-solutions-hub
+
+**Organization-wide GitHub defaults — standards, templates, and workflow starters**
+
+[![Organization](https://img.shields.io/badge/org-dsatechzone--solutions--hub-1f6feb?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dsatechzone-solutions-hub)
+[![Repository](https://img.shields.io/badge/repo-.github-24292f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dsatechzone-solutions-hub/.github)
+[![Visibility](https://img.shields.io/badge/visibility-public-success?style=for-the-badge)](https://github.com/dsatechzone-solutions-hub/.github)
+[![Templates](https://img.shields.io/badge/issue%20forms-7-blue?style=for-the-badge)](.github/ISSUE_TEMPLATE/)
+[![Workflows](https://img.shields.io/badge/org%20workflows-5-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)](workflow-templates/)
+
+[![Contributing](https://img.shields.io/badge/Contributing-guide-1f883d?style=flat-square)](CONTRIBUTING.md)
+[![Release](https://img.shields.io/badge/Release-semantic--release-494382?style=flat-square&logo=npm)](RELEASE.md)
+[![Security](https://img.shields.io/badge/Security-policy-critical?style=flat-square&logo=shield)](SECURITY.md)
+[![Code of Conduct](https://img.shields.io/badge/Code%20of%20Conduct-Contributor%20Covenant-4baaaa?style=flat-square)](CODE_OF_CONDUCT.md)
+[![Support](https://img.shields.io/badge/Support-help-0969da?style=flat-square)](SUPPORT.md)
+[![Governance](https://img.shields.io/badge/Governance-org%20rules-8250df?style=flat-square)](docs/ORG_GOVERNANCE.md)
+
+</div>
+
+---
 
 This repository provides **organization-wide defaults** for all repositories under [dsatechzone-solutions-hub](https://github.com/dsatechzone-solutions-hub).
 
 GitHub automatically applies these files to member repos that do not define their own version of the same file. See [Creating a default community health file](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file).
 
-## What lives here
+> **Note:** This repository must remain **public** so org-wide issue templates, PR templates, and community health files propagate to member repositories.
+
+## Repository map
 
 | Path | Purpose |
 |------|---------|
@@ -49,6 +72,12 @@ GitHub automatically applies these files to member repos that do not define thei
 - If a member repo adds **any** file under its own `.github/ISSUE_TEMPLATE/`, org issue templates are **not** used for that repo.
 - Repo-local `CONTRIBUTING.md`, `SECURITY.md`, etc. override org defaults.
 
-## Requirements
+---
 
-- This repository must remain **public** for org-wide templates to apply.
+<div align="center">
+
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-FE5196?style=flat-square&logo=conventionalcommits&logoColor=white)](https://www.conventionalcommits.org/)
+[![semantic-release](https://img.shields.io/badge/semantic--release-automated-494382?style=flat-square&logo=semanticrelease)](https://github.com/semantic-release/semantic-release)
+[![TDD](https://img.shields.io/badge/engineering-TDD--first-0ea5e9?style=flat-square)](CONTRIBUTING.md)
+
+</div>

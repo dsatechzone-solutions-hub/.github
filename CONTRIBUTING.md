@@ -1,4 +1,23 @@
-# Contributing to dsatechzone-solutions-hub
+<div align="center">
+
+# Contributing Guide
+
+**Engineering standards for all dsatechzone-solutions-hub repositories**
+
+[![Organization](https://img.shields.io/badge/org-dsatechzone--solutions--hub-1f6feb?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dsatechzone-solutions-hub)
+[![TDD](https://img.shields.io/badge/process-TDD--first-0ea5e9?style=for-the-badge)](https://en.wikipedia.org/wiki/Test-driven_development)
+[![Conventional Commits](https://img.shields.io/badge/commits-Conventional-FE5196?style=for-the-badge&logo=conventionalcommits&logoColor=white)](https://www.conventionalcommits.org/)
+[![Code Review](https://img.shields.io/badge/PRs-review%20required-1f883d?style=for-the-badge)](https://github.com/dsatechzone-solutions-hub/.github/blob/main/docs/ORG_GOVERNANCE.md)
+
+[![Standards Hub](https://img.shields.io/badge/Standards-.github%20repo-24292f?style=flat-square&logo=github)](https://github.com/dsatechzone-solutions-hub/.github)
+[![Release Policy](https://img.shields.io/badge/Release-semantic--release-494382?style=flat-square)](RELEASE.md)
+[![Security](https://img.shields.io/badge/Security-policy-critical?style=flat-square&logo=shield)](SECURITY.md)
+[![Support](https://img.shields.io/badge/Support-help-0969da?style=flat-square)](SUPPORT.md)
+[![Governance](https://img.shields.io/badge/Governance-rules-8250df?style=flat-square)](docs/ORG_GOVERNANCE.md)
+
+</div>
+
+---
 
 Thank you for contributing. This document defines how we work across all repositories in the organization.
 
@@ -73,9 +92,9 @@ For bash, YAML, and Kubernetes manifest repos (e.g. `scaleway-home-lab`):
 
 | Tool | Purpose | When required |
 |------|---------|---------------|
-| [shellcheck](https://www.shellcheck.net/) | Bash correctness | Any `*.sh` changed |
-| [yamllint](https://yamllint.readthedocs.io/) | YAML style and syntax | Any `*.yml` / `*.yaml` changed |
-| [kubeconform](https://github.com/yannh/kubeconform) | K8s manifest schema validation | Manifests under `config/k8s/` changed |
+| [![shellcheck](https://img.shields.io/badge/shellcheck-lint-4EAA25?style=flat-square&logo=gnubash&logoColor=white)](https://www.shellcheck.net/) | Bash correctness | Any `*.sh` changed |
+| [![yamllint](https://img.shields.io/badge/yamllint-lint-cb171e?style=flat-square)](https://yamllint.readthedocs.io/) | YAML style and syntax | Any `*.yml` / `*.yaml` changed |
+| [![kubeconform](https://img.shields.io/badge/kubeconform-validate-326ce5?style=flat-square&logo=kubernetes&logoColor=white)](https://github.com/yannh/kubeconform) | K8s manifest schema validation | Manifests under `config/k8s/` changed |
 
 Adopt the org **Infra CI** workflow starter or run equivalent checks locally.
 
@@ -91,10 +110,11 @@ Infra repos do **not** use semantic-release — see [RELEASE.md](RELEASE.md).
 - [ ] Reviewer feedback addressed or deferred with a linked issue
 - [ ] Rollback or revert path understood for infra changes
 
-## Releases
+## Related policies
 
-Versioned application and library repos use [semantic-release](RELEASE.md). Infra repos use continuous delivery without semver tags.
-
-## Code of Conduct
-
-All contributors must follow [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+| Document | Description |
+|----------|-------------|
+| [RELEASE.md](RELEASE.md) | Versioning and semantic-release |
+| [SECURITY.md](SECURITY.md) | Vulnerability reporting |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community standards |
+| [ORG_GOVERNANCE.md](docs/ORG_GOVERNANCE.md) | Branch protection and CODEOWNERS |

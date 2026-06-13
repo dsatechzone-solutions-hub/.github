@@ -1,4 +1,22 @@
+<div align="center">
+
 # Security Policy
+
+**Responsible disclosure for dsatechzone-solutions-hub**
+
+[![Organization](https://img.shields.io/badge/org-dsatechzone--solutions--hub-1f6feb?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dsatechzone-solutions-hub)
+[![Reporting](https://img.shields.io/badge/report-private%20email-critical?style=for-the-badge&logo=maildotru&logoColor=white)](mailto:dipak-kumar.singh@dsatechzone.com)
+[![Response SLA](https://img.shields.io/badge/acknowledgment-48%20hours-success?style=for-the-badge)](mailto:dipak-kumar.singh@dsatechzone.com)
+[![Safe Harbor](https://img.shields.io/badge/research-good%20faith-blue?style=for-the-badge&logo=shield)](mailto:dipak-kumar.singh@dsatechzone.com)
+
+[![Standards Hub](https://img.shields.io/badge/Standards-.github%20repo-24292f?style=flat-square&logo=github)](https://github.com/dsatechzone-solutions-hub/.github)
+[![Contributing](https://img.shields.io/badge/Contributing-guide-1f883d?style=flat-square)](CONTRIBUTING.md)
+[![Support](https://img.shields.io/badge/Support-help-0969da?style=flat-square)](SUPPORT.md)
+[![Governance](https://img.shields.io/badge/Governance-rules-8250df?style=flat-square)](docs/ORG_GOVERNANCE.md)
+
+</div>
+
+---
 
 ## Supported versions
 
@@ -6,11 +24,15 @@ Security fixes are applied to the latest commit on the default branch (`main`) u
 
 ## Reporting a vulnerability
 
+[![Do not open public issues](https://img.shields.io/badge/public%20issues-do%20not%20use%20for%20exploits-red?style=flat-square)](#reporting-a-vulnerability)
+
 **Do not** open a public GitHub issue for exploitable security vulnerabilities.
 
 Report privately to:
 
-**Email:** dipak-kumar.singh@dsatechzone.com
+| Channel | Contact |
+|---------|---------|
+| **Email** | [dipak-kumar.singh@dsatechzone.com](mailto:dipak-kumar.singh@dsatechzone.com) |
 
 Include:
 
@@ -34,3 +56,11 @@ We support good-faith security research. Report issues responsibly and avoid acc
 ## PGP
 
 A PGP public key will be published here when available. Until then, use the email address above.
+
+---
+
+<div align="center">
+
+[![Org Security Contact](https://img.shields.io/badge/security%20contact-dipak--kumar.singh%40dsatechzone.com-lightgrey?style=flat-square)](mailto:dipak-kumar.singh@dsatechzone.com)
+
+</div>

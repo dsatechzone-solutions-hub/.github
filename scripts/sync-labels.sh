@@ -51,16 +51,16 @@ while IFS= read -r line || [[ -n "${line}" ]]; do
     "- name:"*)
       flush_label
       name="${line#- name: }"
-      name="${name#\"}"
-      name="${name%\"}"
+      name="${name//\"/}"
       ;;
     "  color:"*)
       color="${line#  color: }"
+      color="${color// /}"
       ;;
     "  description:"*)
-      description="${line#  description: }}"
-      description="${description#\"}"
-      description="${description%\"}"
+      description="${line#  description: }"
+      description="${description//\"/}"
+      description="${description%\}}"
       ;;
   esac
 done < "${LABELS_FILE}"
